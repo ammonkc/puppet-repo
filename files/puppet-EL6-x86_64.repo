@@ -1,0 +1,7 @@
+[puppet-el6-x86_64]
+name=puppet-el6-x86_64
+baseurl=http://yum.puppetlabs.com/el/6/products/x86_64
+enabled=1
+priority=90
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-puppetlabs

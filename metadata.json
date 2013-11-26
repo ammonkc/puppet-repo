@@ -1,0 +1,12 @@
+{
+  "description": "Module for yum repo configuration",
+  "summary": "Puppet module for yum repo",
+  "author": "ammonkc",
+  "source": "git://github.com/ammonkc/puppet-repo.git",
+  "project_page": "https://github.com/ammonkc/puppet-repo",
+  "name": "ammonkc-repo",
+  "checksums": {},
+  "dependencies": [],
+  "license": "Apache 2.0",
+  "version": "0.1.3"
+}

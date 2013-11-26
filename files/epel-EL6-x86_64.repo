@@ -1,0 +1,35 @@
+[epel]
+name=Extra Packages for Enterprise Linux 6 - $basearch
+#mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=epel-6&arch=$basearch
+baseurl=http://snet2-dfw.mirror.rackspace.com/epel/6/$basearch
+        http://snet1-dfw.mirror.rackspace.com/epel/6/$basearch
+        http://mirror.rackspace.com/epel/6/$basearch
+        http://download.fedoraproject.org/pub/epel/6/$basearch
+failovermethod=priority
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
+
+[epel-debuginfo]
+name=Extra Packages for Enterprise Linux 6 - $basearch - Debug
+#mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=epel-debug-6&arch=$basearch
+baseurl=http://snet2-dfw.mirror.rackspace.com/epel/6/$basearch/debug
+        http://snet1-dfw.mirror.rackspace.com/epel/6/$basearch/debug
+        http://mirror.rackspace.com/epel/6/$basearch/debug
+        http://download.fedoraproject.org/pub/epel/6/$basearch/debug
+failovermethod=priority
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
+gpgcheck=1
+
+[epel-source]
+name=Extra Packages for Enterprise Linux 6 - $basearch - Source
+#mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=epel-source-6&arch=$basearch
+baseurl=http://snet2-dfw.mirror.rackspace.com/epel/6/SRPMS
+        http://snet1-dfw.mirror.rackspace.com/epel/6/SRPMS
+        http://mirror.rackspace.com/epel/6/SRPMS
+        http://download.fedoraproject.org/pub/epel/6/SRPMS
+failovermethod=priority
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
+gpgcheck=1
