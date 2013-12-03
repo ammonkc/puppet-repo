@@ -28,7 +28,7 @@ class repo::remi (
                         $enable = 0
                     }
                     # Manage repo
-                    yumrepo { 'remi':
+                    yumrepo { 'remi.repo':
                         name        => 'remi',
                     #    baseurl     => 'http://rpms.famillecollet.com/enterprise/$releasever/remi/$basearch/',
                         mirrorlist  => 'http://rpms.famillecollet.com/enterprise/$releasever/remi/mirror',
@@ -39,7 +39,7 @@ class repo::remi (
                         require     => [
                             File[$gpgkey],
                             File[$repo],
-                            Yumrepo['epel'],
+                            File['/etc/yum.repos.d/epel.repo'],
                         ],
                     }
                     file { $repo:
