@@ -28,7 +28,7 @@ class repo::epel (
                         $enable = 0
                     }
                     # manage repo
-                    yumrepo { 'epel.repo':
+                    yumrepo { 'epel':
                         name        => 'epel',
                         baseurl     => 'http://download.fedoraproject.org/pub/epel/6/$basearch',
                         mirrorlist  => 'https://mirrors.fedoraproject.org/metalink?repo=epel-6&arch=$basearch',
